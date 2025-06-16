@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Basic colors -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#FF666666</color>
+    <color name="blue">#FF007AFF</color>
+    <color name="green">#FF00C853</color>
+
+    <!-- Red and variants -->
+    <color name="red">#FFF44336</color>
+    <color name="light_red">#FFFF5722</color>
+    <color name="dark_red">#D32F2F</color>
+
+    <!-- Yellow and variants -->
+    <color name="yellow">#FFFFEB3B</color>
+    <color name="light_yellow">#FFFFF176</color>
+    <color name="dark_yellow">#FBC02D</color>
+
+    <!-- Pink and variants -->
+    <color name="pink">#FFF50057</color>
+    <color name="light_pink">#F06292</color>
+    <color name="dark_pink">#C2185B</color>
+
+    <!-- Orange and variants -->
+    <color name="orange">#FFFB8C00</color>
+    <color name="light_orange">#FFCC7A00</color>
+    <color name="dark_orange">#E65100</color>
+
+    <!-- Purple and variants -->
+    <color name="purple">#FF9C27B0</color>
+    <color name="light_purple">#E1BEE7</color>
+    <color name="dark_purple">#8E24AA</color>
+
+    <!-- Teal and variants -->
+    <color name="teal">#FF009688</color>
+    <color name="light_teal">#4DB6AC</color>
+    <color name="dark_teal">#00796B</color>
+
+    <!-- Brown and variants -->
+    <color name="brown">#FF795548</color>
+    <color name="light_brown">#8D6E63</color>
+    <color name="dark_brown">#3E2723</color>
+
+    <!-- Other common colors -->
+    <color name="transparent">#00000000</color>
+    <color name="silver">#FFC0C0C0</color>
+    <color name="lime">#FF00FF00</color>
+    <color name="indigo">#FF3F51B5</color>
+    <color name="cyan">#FF00BCD4</color>
+</resources>

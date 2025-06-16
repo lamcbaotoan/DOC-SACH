@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission-sdk-23 android:name="android.permission.CAMERA" />
+    <uses-permission-sdk-23 android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission-sdk-23 android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/ic_app_bgr"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_app_bgr"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ĐỌCSÁCH"
+        tools:targetApi="31">
+        <activity
+            android:name=".chitiettruyen.EditChapterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".edituser.EditActivity"
+            android:exported="false" />
+        <activity
+            android:name=".notification.NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".chitiettruyen.AddChapterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".chitiettruyen.ReadActivity"
+            android:exported="false" />
+        <activity
+            android:name=".chitiettruyen.DetailAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".chitiettruyen.DetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".timkiem.FilterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.EditBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.AddBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.EditUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.AddUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".timkiem.SearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.ManageBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.ManageUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".login_register.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".login_register.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

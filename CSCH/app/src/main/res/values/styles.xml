@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Tùy chỉnh thêm nếu cần -->
+    </style>
+
+    <!-- Kiểu cho hình ảnh tròn -->
+    <style name="CircleImage">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <!-- Kiểu Animation cho PopupWindow -->
+    <style name="PopupAnimation">
+        <item name="android:windowEnterAnimation">@anim/popup_animation</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+</resources>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".admin.EditBookActivity">
+
+        <!-- Book Cover Image -->
+        <ImageView
+            android:id="@+id/ivBookCover"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:src="@drawable/bia_truyen"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Button to Select Cover -->
+        <Button
+            android:id="@+id/btnSelectCover"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chọn ảnh bìa"
+            android:layout_marginBottom="16dp" />
+
+        <!-- CardView for Book Info -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                        <!-- Book Name -->
+                        <EditText
+                            android:id="@+id/etBookName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Tên sách"
+                            android:inputType="text"
+                            android:layout_marginBottom="8dp" />
+
+                        <!-- Author -->
+                        <EditText
+                            android:id="@+id/etAuthor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Tác giả"
+                            android:inputType="text"
+                            android:layout_marginBottom="8dp" />
+
+                        <!-- Genre -->
+                        <EditText
+                            android:id="@+id/etGenre"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Thể loại"
+                            android:inputType="text"
+                            android:layout_marginBottom="8dp" />
+
+                        <!-- Status Spinner -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Trạng thái"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="4dp" />
+
+                        <Spinner
+                            android:id="@+id/spinnerStatus"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:entries="@array/book_status_array"
+                            android:layout_marginBottom="8dp" />
+
+                        <!-- Description -->
+                        <EditText
+                            android:id="@+id/etDescription"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Mô tả"
+                            android:gravity="top"
+                            android:lines="3"
+                            android:layout_marginBottom="8dp" />
+
+                        <!-- Translation Group -->
+                        <EditText
+                            android:id="@+id/etTranslationGroup"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Nhóm dịch"
+                            android:inputType="text" />
+
+                </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Update Button -->
+        <Button
+            android:id="@+id/btnUpdateBook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cập nhật sách"
+            android:layout_marginTop="16dp"
+            android:background="@color/black"
+            android:textColor="@android:color/white" />
+
+        <!-- Delete Button -->
+        <Button
+            android:id="@+id/btnDeleteBook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Xóa sách"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/holo_red_dark"
+            android:textColor="@android:color/white" />
+
+</LinearLayout>

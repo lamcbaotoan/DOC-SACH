@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lv_Chapte"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".timkiem.FilterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Thêm checkbox cho từng thể loại -->
+
+            <CheckBox android:id="@+id/checkbox_hien_dai" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Hiện đại" />
+            <CheckBox android:id="@+id/checkbox_huyen_huyen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Huyền huyễn" />
+            <CheckBox android:id="@+id/checkbox_hau_cung" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Hậu cung" />
+            <CheckBox android:id="@+id/checkbox_he_thong" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Hệ thống" />
+            <CheckBox android:id="@+id/checkbox_kinh_di" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Kinh dị" />
+            <CheckBox android:id="@+id/checkbox_lich_su" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Lịch sử" />
+            <CheckBox android:id="@+id/checkbox_mat_the" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Mạt thế" />
+            <CheckBox android:id="@+id/checkbox_ngon_tinh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ngôn tình" />
+            <CheckBox android:id="@+id/checkbox_thanh_xuan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Thanh xuân" />
+            <CheckBox android:id="@+id/checkbox_truong_hoc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Trường học" />
+            <CheckBox android:id="@+id/checkbox_trung_sinh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Trùng sinh" />
+            <CheckBox android:id="@+id/checkbox_trong_sinh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Trọng sinh" />
+            <CheckBox android:id="@+id/checkbox_tu_tien" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tu tiên" />
+            <CheckBox android:id="@+id/checkbox_xuyen_khong" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Xuyên không" />
+            <CheckBox android:id="@+id/checkbox_do_thi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Đô thị" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="8dp">
+
+        <Button
+            android:id="@+id/btn_clear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:text="Bỏ chọn"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btn_apply"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:text="Áp dụng"
+            android:backgroundTint="@android:color/holo_blue_light"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</LinearLayout>
